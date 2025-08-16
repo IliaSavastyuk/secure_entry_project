@@ -54,36 +54,41 @@ dkms.conf
 # debug information files
 *.dwo
 
-# Ignore Vivado and Vitis generated files
+# ---- Vivado outputs to ignore ----
+*.bit
+*.bin
+*.mmi
+*.rpt
+*.wdb
 *.jou
 *.log
-*.str
-*.zip
-*.gz
-*.bin
-*.bit
-*.mmi
-*.wdb
-*.pb
-*.dcp
-*.rpt
 *.html
 *.xml
 *.csv
 
-# Vivado project temp and build directories
-.cache/
-.hw/
+# Build dirs
+*.runs/
+*.cache/
+*.hw/
 .ip_user_files/
 .sim/
-.srcs/
 .Xil/
 .gen/
 .data/
 .tmp/
 
-# Vitis / SDK
+# ---- Keep sources even inside .srcs ----
+!.srcs/
+!**/*.vhd
+!**/*.v
+!**/*.sv
+!**/*.xdc
+!**/*.tcl
+!**/*.xci   # (keep if you want IP configs in repo)
+
+# ---- Vitis / SDK ----
 .metadata/
-.sdk/
-.launches/
+*.launch
+**/Debug/
+**/Release/
 

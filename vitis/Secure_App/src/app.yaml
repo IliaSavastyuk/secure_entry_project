@@ -1,0 +1,4 @@
+domain_path: C:\Users\Meow\Desktop\secure_entry_project\vitis\Secure_Platform\export\Secure_Platform\sw\standalone_microblaze_0
+app_src_dir: C:\Xilinx\Vitis\2024.2\data\embeddedsw\lib\sw_apps\hello_world
+template: hello_world
+lang: c
