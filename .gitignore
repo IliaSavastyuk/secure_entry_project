@@ -53,3 +53,37 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# Ignore Vivado and Vitis generated files
+*.jou
+*.log
+*.str
+*.zip
+*.gz
+*.bin
+*.bit
+*.mmi
+*.wdb
+*.pb
+*.dcp
+*.rpt
+*.html
+*.xml
+*.csv
+
+# Vivado project temp and build directories
+.cache/
+.hw/
+.ip_user_files/
+.sim/
+.srcs/
+.Xil/
+.gen/
+.data/
+.tmp/
+
+# Vitis / SDK
+.metadata/
+.sdk/
+.launches/
+
